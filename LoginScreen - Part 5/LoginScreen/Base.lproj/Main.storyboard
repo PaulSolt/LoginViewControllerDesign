@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="40" affinity="maxY"/>
+                            <userLayoutGuide location="353" affinity="minY"/>
+                            <userLayoutGuide location="313" affinity="minY"/>
+                            <userLayoutGuide location="206" affinity="minY"/>
+                        </userGuides>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="TsI-YY-ZfQ" userLabel="Background Image">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZb-zb-PUo">
+                                <rect key="frame" x="84" y="352" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="p2M-3x-Jms"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <state key="normal" title="Login" backgroundImage="ButtonStretch">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="ButtonStretch-Highlighted"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cdD-Lz-Mch"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUj-zL-ypu">
+                                <rect key="frame" x="84" y="400" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="o4L-73-xjF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <state key="normal" title="New User" backgroundImage="ButtonStretch">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="ButtonStretch-Highlighted"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WyO-1z-15Y">
+                                <rect key="frame" x="104" y="283" width="196" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="AJL-R2-6pE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6OS-vb-lp9">
+                                <rect key="frame" x="104" y="245" width="196" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="SdA-ZP-jWR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="so4-Qb-jFs">
+                                <rect key="frame" x="20" y="286" width="76" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5d-Oi-bW0">
+                                <rect key="frame" x="20" y="248" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Row.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kCh-er-FhR">
+                                <rect key="frame" x="40" y="20" width="240" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Sf3-hi-PLb"/>
+                                    <constraint firstAttribute="height" constant="186" id="Vfo-Vm-byg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WyO-1z-15Y" firstAttribute="top" secondItem="6OS-vb-lp9" secondAttribute="bottom" constant="8" id="84s-qp-xHL"/>
+                            <constraint firstItem="K5d-Oi-bW0" firstAttribute="centerY" secondItem="6OS-vb-lp9" secondAttribute="centerY" constant="-1.5" id="Do3-XB-I3z"/>
+                            <constraint firstItem="kCh-er-FhR" firstAttribute="centerX" secondItem="6OS-vb-lp9" secondAttribute="centerX" constant="-42" id="HPJ-FD-hSL"/>
+                            <constraint firstItem="TsI-YY-ZfQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="J5N-pH-3iU"/>
+                            <constraint firstItem="WyO-1z-15Y" firstAttribute="centerX" secondItem="6OS-vb-lp9" secondAttribute="centerX" id="Lvt-yG-6YI"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="BUj-zL-ypu" secondAttribute="bottom" constant="40" id="SSS-Ge-n4w"/>
+                            <constraint firstAttribute="centerX" secondItem="BUj-zL-ypu" secondAttribute="centerX" id="Svi-yZ-MIY"/>
+                            <constraint firstItem="TsI-YY-ZfQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Xvd-fJ-1dp"/>
+                            <constraint firstItem="6OS-vb-lp9" firstAttribute="leading" secondItem="K5d-Oi-bW0" secondAttribute="trailing" constant="42" id="bPh-hx-0gx"/>
+                            <constraint firstItem="yZb-zb-PUo" firstAttribute="top" secondItem="WyO-1z-15Y" secondAttribute="bottom" constant="39" id="fpG-qT-8vt"/>
+                            <constraint firstItem="yZb-zb-PUo" firstAttribute="centerX" secondItem="BUj-zL-ypu" secondAttribute="centerX" id="geP-4q-4e3"/>
+                            <constraint firstItem="WyO-1z-15Y" firstAttribute="centerX" secondItem="yZb-zb-PUo" secondAttribute="centerX" constant="42" id="gtZ-xK-HfB"/>
+                            <constraint firstItem="BUj-zL-ypu" firstAttribute="top" secondItem="yZb-zb-PUo" secondAttribute="bottom" constant="8" id="mmv-7h-bLb"/>
+                            <constraint firstAttribute="trailing" secondItem="TsI-YY-ZfQ" secondAttribute="trailing" id="oZ9-Wu-wyA"/>
+                            <constraint firstItem="6OS-vb-lp9" firstAttribute="top" secondItem="kCh-er-FhR" secondAttribute="bottom" constant="39" id="tMe-at-jRT"/>
+                            <constraint firstItem="WyO-1z-15Y" firstAttribute="leading" secondItem="so4-Qb-jFs" secondAttribute="trailing" constant="8" id="uUc-hp-ouI"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="TsI-YY-ZfQ" secondAttribute="bottom" id="wzi-Nz-bsM"/>
+                            <constraint firstItem="WyO-1z-15Y" firstAttribute="centerY" secondItem="so4-Qb-jFs" secondAttribute="centerY" constant="1.5" id="zPv-xu-7ds"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="30"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background.png" width="320" height="568"/>
+        <image name="ButtonStretch" width="40" height="40"/>
+        <image name="ButtonStretch-Highlighted" width="40" height="40"/>
+        <image name="Row.jpg" width="600" height="400"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
